@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Thông Tin Tiểu Sử</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Thông Tin Tiểu Sử</h1>
+        <form id="infoForm">
+            <label for="fullName">Họ và Tên:</label>
+            <input type="text" id="fullName" required>
+
+            <label for="dob">Ngày Tháng Năm Sinh:</label>
+            <input type="date" id="dob" required>
+
+            <label for="cccd">CCCD:</label>
+            <input type="text" id="cccd" required>
+
+            <label for="address">Địa Chỉ Thường Trú:</label>
+            <textarea id="address" required></textarea>
+
+            <button type="button" onclick="saveInfo()">Xác Nhận</button>
+        </form>
+    </div>
+
+    <script>
+        function saveInfo(){
+            window.location.href = "question.html";
+        }
+    </script>
+</body>
+</html>
